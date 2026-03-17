@@ -1,0 +1,2 @@
+!function(){"use strict";function t(t){this.$module=t}t.prototype.init=function(){var t=this.$module;if(t){var n=t.querySelector('form[action="/form-handler"]');this.preventFormSubmission(n)}},t.prototype.preventFormSubmission=function(t){if(!t)return!1;t.addEventListener("submit",(function(t){t.preventDefault()}))},new t(document).init()}();
+//# sourceMappingURL=example-f43e7879015e9e1d96239b483328e819.js.map
