@@ -18,10 +18,15 @@
 <meta name="csrf-token" content="O69Oeo_u2XNsS1Vgr5DPdLJFogHK65kCw4IIAw8iUe9HhSOwt69LjcbB5dRk-ld3qLFV83nWC_xBDqqPhdbDKA">
 
   <meta property="og:image" content="/assets/govuk-opengraph-image-03837e1cec82f217cf32514635a13c879b8c400ae3b1c207c5744411658c7635.png">
+   <script src="modernizr.js"></script>
 </head>
-
-<body class="govuk-template__body " data-new-gr-c-s-check-loaded="14.1276.0" data-gr-ext-installed="">
-  
+ <script src="modernizr.js"></script>
+   <body class="govuk-template__body js-enabled" data-gr-c-s-loaded="true">
+    <script>   function go(){
+      if(document.getElementById('r1').checked){location.href='index.html';}
+      else if(document.getElementById('r2').checked){location.href='table.html';}
+     
+      }</script>
 
   <a href="https://" class="govuk-skip-link">Skip to main content</a>
 
@@ -52,6 +57,7 @@
           <![endif]-->
         </a>
       </div>
+
       <div class="govuk-header__content">
           <a id="proposition-name" class="govuk-header__link govuk-header__service-name" href="https://">Apply for a waste transport permit or exemption</a>
 
@@ -85,9 +91,11 @@
 </div>
 
 
-  <div class="govuk-form-group"><fieldset class="govuk-fieldset"><legend class="govuk-fieldset__legend govuk-fieldset__legend--l"><h1 class="govuk-fieldset__heading">Do you import waste from or export waste to any country outside the UK?</h1></legend><input value="" autocomplete="off" type="hidden" name="start_form[temp_start_option]" id="start_form_temp_start_option"><div class="govuk-radios" data-module="govuk-radios"><div class="govuk-radios__item"><input id="start-form-temp-start-option-new-field" class="govuk-radios__input" type="radio" value="new" name="start_form[temp_start_option]"><label for="start-form-temp-start-option-new-field" class="govuk-label govuk-radios__label">Yes</label></div><div class="govuk-radios__item"><input id="start-form-temp-start-option-renew-field" class="govuk-radios__input" type="radio" value="renew" name="start_form[temp_start_option]"><label for="start-form-temp-start-option-renew-field" class="govuk-label govuk-radios__label">No</label></div></div></fieldset></div>
+  <div class="govuk-form-group"><fieldset class="govuk-fieldset"><legend class="govuk-fieldset__legend govuk-fieldset__legend--l"><h1 class="govuk-fieldset__heading">Do you import waste from or export waste to any country outside the UK?</h1></legend><input value="" autocomplete="off" type="hidden" name="start_form[temp_start_option]" id="start_form_temp_start_option"><div class="govuk-radios" data-module="govuk-radios"><div class="govuk-radios__item"><input id="r1" class="govuk-radios__input" type="radio" value="new" name="start_form[temp_start_option]"><label for="start-form-temp-start-option-new-field" class="govuk-label govuk-radios__label">Yes</label></div><div class="govuk-radios__item"><input id="r2" class="govuk-radios__input" type="radio" value="renew" name="start_form[temp_start_option]"><label for="start-form-temp-start-option-renew-field" class="govuk-label govuk-radios__label">No</label></div></div></fieldset></div>
 
-  <button type="submit" formnovalidate="formnovalidate" class="govuk-button" data-module="govuk-button" data-prevent-double-click="true">Continue</button>
+   <button type="button" class="govuk-button" onclick="go()">
+          Continue
+        </button>
 </form>
     </main>
   </div>
@@ -125,8 +133,8 @@
       </div>
     </div>
   </footer>
-  
-  <script src="application-10d30ea3c29f9070bff4f8bca32568079f72cd6cdff0db620ffbbd991df72d7c.js"></script>
+   <script src="govuk-frontend-20744be589c59759902ff185ebffc559.js"></script>
+ 
 
 
 
