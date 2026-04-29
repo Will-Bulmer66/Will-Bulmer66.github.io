@@ -23,8 +23,8 @@
  <script src="modernizr.js"></script>
    <body class="govuk-template__body js-enabled" data-gr-c-s-loaded="true">
     <script>   function go(){
-      if(document.getElementById('r1').checked){location.href='index.html';}
-      else if(document.getElementById('r2').checked){location.href='total_less_750.html';}
+      if(document.getElementById('radio1').checked){location.href='index.html';}
+      else if(document.getElementById('radio2').checked){location.href='total_less_750.html';}
      
       }</script>
 
@@ -95,9 +95,9 @@
     <input value="" autocomplete="off" type="hidden" name="start_form[temp_start_option]" id="start_form_temp_start_option">
     
     <div class="govuk-radios" data-module="govuk-radios">
-    <div class="govuk-radios__item"><input id="r1" class="govuk-radios__input" type="radio" value="new" name="r1"><label for="start-form-temp-start-option-new-field" class="govuk-label govuk-radios__label">Yes</label></div>
+    <div class="govuk-radios__item"><input id="radio1" class="govuk-radios__input" type="radio" value="new" name="radio1"><label for="start-form-temp-start-option-new-field" class="govuk-label govuk-radios__label">Yes</label></div>
 
-    <div class="govuk-radios__item"><input id="r2" class="govuk-radios__input" type="radio" value="renew" name="r2"><label for="start-form-temp-start-option-renew-field" class="govuk-label govuk-radios__label">No</label></div></div></fieldset></div>
+    <div class="govuk-radios__item"><input id="radio2" class="govuk-radios__input" type="radio" value="renew" name="radio2"><label for="start-form-temp-start-option-renew-field" class="govuk-label govuk-radios__label">No</label></div></div></fieldset></div>
 
    <button type="button" class="govuk-button" onclick="go()">
           Continue
