@@ -1,0 +1,49 @@
+.hidden, .u-hidden {
+    display: none !important;
+}
+.text-danger {
+    color: #a94442;
+}
+
+/* For hidden elements visible to screen reader*/
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+    white-space: nowrap;
+}
+
+.sr-only-focusable:active, .sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+}
+.has-feedback label.sr-only ~ .form-control-feedback {
+    top: 0; }
+
+/* Make sticky nav scrollable on short screens,
+ but not narrow screens (as it'll be above the main content) */
+@media (min-width: 641px) {
+    .scrollable {
+        /* Make scrollable */
+        max-height: 100vh;
+        overflow: scroll;
+        /* Hide scrollbar so it doesn't go past content */
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+    }
+    #scroll-spacer {
+        /* Add space below content so you can scroll beyond
+        and avoid scrolling the rest of the page */
+        height: 500px;
+    }
+}
